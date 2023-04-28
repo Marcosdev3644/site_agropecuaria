@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: green;
+    padding: 16px 0;
+}
+
+header li {
+    display: inline;
+    margin-left: 16px;
+}
+
+.img-logo {
+    cursor: pointer;
+}
+
+.container {
+    max-width: 1280px;
+    width: 100;
+    margin: 0 auto;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu nav a {
+    color: #000;
+    text-decoration: none;
+    padding: 0px 50px 10px 0px;
+    font-size: 30px;
+    position: relative;
+}
+
+.menu nav a::after {
+    content: " ";
+    width: 0%;
+    height: 4px;
+    background-color: #000;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.menu nav a:hover::after {
+    width: 100%;
+}
+
+.sociais img {
+    height: 32px;
+}
+
+.sociais li {
+    margin-right: 32px;
+    cursor: pointer;
+}
+
+section .container {
+    align-items: flex-start;
+    display: flex;
+}
+
+section {
+    padding: 32px 0;
+}
+
+section h2, p {
+    margin-bottom: 16px;
+}
+
+.campo {
+    margin-right: 32px;
+}
+
+#contact .container { /*estilização inputs*/
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 16px 0;
+}
+
+#contact .container {
+    display: block;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.form-contact {
+    display: flex;
+    justify-content: space-between;
+}
+
+#contact .container input { /*estilizando inputs*/
+    margin: 8px 5px;
+    margin-left: 10px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 1px 1px 6px rgb(92, 92, 92);
+}               
+
+form button {
+    background-color: rgb(0, 128, 0);
+    color: black;
+    padding: 8px;
+    width: 315px;
+    font-size: 16px;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: rgb(0, 220, 0);
+    box-shadow: rgb(0, 128, 10) 5px 5px 6px;
+}
+
+.information { /*informações*/
+    display: flex;
+}
+
+.information li {
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid;
+    background: white;
+    box-shadow: black 10px 10px 20px 0;
+}
+
+footer {
+    background-color: green;
+    color: black;
+    padding: 16px 0;
+    justify-content: space-between;
+    align-items: center;
+}
